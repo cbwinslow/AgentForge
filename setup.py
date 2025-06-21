@@ -49,6 +49,7 @@ setup(
         "requests",
         "ruamel.yaml",
         "xmltodict",
+        "Flask",
         "setuptools>=70.0.0 ",  # not directly required, pinned by Snyk to avoid a vulnerability
     ],
     extras_require={

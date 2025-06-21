@@ -1,0 +1,3 @@
+- Automate dependency installation via a requirements lock file to avoid manual steps.
+- Add a script for running tests in CI to ensure dependencies are present.
+- Consider slimming dependencies to speed up installation and testing.
