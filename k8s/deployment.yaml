@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agentforge
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: agentforge
+  template:
+    metadata:
+      labels:
+        app: agentforge
+    spec:
+      containers:
+      - name: agentforge
+        image: agentforge:latest
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: agentforge
+spec:
+  selector:
+    app: agentforge
+  ports:
+  - port: 80
+    targetPort: 8080

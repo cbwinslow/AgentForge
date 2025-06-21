@@ -1,0 +1,4 @@
+- Adopt GitHub Actions to run scripts/run_tests.sh on every push.
+- Consider slimming the Docker image by using multi-stage builds.
+- Use requirements.lock in CI to ensure deterministic installs.
+- Expand system diagrams to include GitHub/GitLab integrations.
